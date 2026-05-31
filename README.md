@@ -4,6 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@algovoi/webhook-verifier.svg)](https://www.npmjs.com/package/@algovoi/webhook-verifier)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Vectors](https://img.shields.io/badge/vectors-13%2F13-brightgreen)](vectors/)
+[![Cross-validation](https://img.shields.io/badge/cross--validation-104%2F104%20%288%20langs%29-brightgreen)](_attestations/2026-05-31-8-impl-cross-validation.md)
 
 Cryptographic verifier for [AlgoVoi](https://algovoi.co.uk) webhook signatures. Validates the `X-AlgoVoi-Signature` header produced by the AlgoVoi gateway using:
 
@@ -178,14 +179,29 @@ python vectors/generate_vectors.py
 
 ## Test results
 
-| Implementation | Result |
-|---|---|
-| Python unit tests | 34/34 |
-| Python vector tests | 13/13 |
-| TypeScript unit tests | 32/32 |
-| TypeScript vector tests | 13/13 |
+| Implementation | Tests | Result |
+|---|---|---|
+| Python unit | 34 | 34/34 |
+| Python vectors | 13 | 13/13 |
+| TypeScript unit | 32 | 32/32 |
+| TypeScript vectors | 13 | 13/13 |
 
-**Total: Python 47/47 · TypeScript 45/45**
+**Python 47/47 · TypeScript 45/45**
+
+### 8-language cross-validation
+
+104/104 agreements across all 8 implementations × 13 vectors. See [`_attestations/2026-05-31-8-impl-cross-validation.md`](_attestations/2026-05-31-8-impl-cross-validation.md).
+
+| Language | Result |
+|---|---|
+| Python | 13/13 |
+| TypeScript | 13/13 |
+| Go | 13/13 |
+| Rust | 13/13 |
+| Java | 13/13 |
+| PHP | 13/13 |
+| .NET | 13/13 |
+| Ruby | 13/13 |
 
 ---
 

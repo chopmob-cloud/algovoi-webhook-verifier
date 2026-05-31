@@ -25,6 +25,16 @@ typescript/node_modules/
 *.swp
 *.swo
 
+# Rust
+implementations/rust/target/
+
+# Java compiled
+implementations/java/*.class
+
+# .NET build
+implementations/dotnet/bin/
+implementations/dotnet/obj/
+
 # OS
 .DS_Store
 Thumbs.db
