@@ -1,0 +1,8 @@
+{
+  "description": "Valid payload containing non-ASCII characters",
+  "secret": "algvw_test_secret_for_vectors_only",
+  "timestamp": 1748650000,
+  "body": "{\"id\":\"evt_unicode_001\",\"type\":\"payment.confirmed\",\"created\":1748650000,\"api_version\":\"2024-01-01\",\"data\":{\"label\":\"\u00dcn\u00efc\u00f6d\u00e9 p\u00e0yment \u2014 caf\u00e9\"}}",
+  "signature_header": "t=1748650000,v1=e4dcdb77d76485c3f73a125d750f7187a2e2d491e619d24adb0a33adfb7f41ae,v2=8ac5a0f985f55c5e440bd8d1ec2ec450283d80ed13cfefb15c494fba43d092d1bcef3ec85cbb2c4473cb9324d17dec96",
+  "expected": "ok"
+}

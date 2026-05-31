@@ -1,0 +1,11 @@
+{
+  "description": "Timestamp 600s old with 300s tolerance \u2192 STALE_SIGNATURE",
+  "secret": "algvw_test_secret_for_vectors_only",
+  "timestamp": 1748649400,
+  "body": "{\"id\":\"evt_test_001\",\"type\":\"payment.confirmed\",\"created\":1748650000,\"api_version\":\"2024-01-01\",\"data\":{\"tenant_label\":\"test-tenant\",\"resource_id\":\"pay_abc123\",\"chain\":\"base\",\"asset\":{\"id\":\"usdc\",\"label\":\"USDC\",\"decimals\":6},\"amount_microunits\":1000000,\"amount_pretty\":\"1.00 USDC\",\"tx_id\":\"0xdeadbeef\",\"payer_address\":\"0xabc\",\"payment_link_token\":\"tok_test\",\"payment_link_label\":\"Test Payment\"}}",
+  "signature_header": "t=1748649400,v1=b486e2d2d168ba0e08d92f1a52e57ae30d20981548097c4e6a54af5cad161acb,v2=f8fbb06e748166d465210bf89853463204166d01dd278f7ce09931b0e1741f651f4f6003c787b14941fc2ee5d15722bc",
+  "tolerance": 300,
+  "fake_now": 1748650000,
+  "expected": "error",
+  "error_code": "STALE_SIGNATURE"
+}

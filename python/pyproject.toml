@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "algovoi-webhook-verifier"
+version = "0.1.0"
+description = "Cryptographic verifier for AlgoVoi webhook signatures (v1 HMAC-SHA256 + v2 HKDF-SHA256/HMAC-SHA384)"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+authors = [{ name = "AlgoVoi", email = "dev@algovoi.co.uk" }]
+keywords = ["webhook", "hmac", "signature", "verification", "algovoi"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "cryptography>=41.0.0",
+]
+
+[project.urls]
+Homepage = "https://docs.algovoi.co.uk/webhook-verifier"
+Repository = "https://github.com/chopmob-cloud/algovoi-webhook-verifier"
+"Bug Tracker" = "https://github.com/chopmob-cloud/algovoi-webhook-verifier/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["algovoi_webhook_verifier"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

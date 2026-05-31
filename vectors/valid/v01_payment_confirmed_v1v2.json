@@ -1,0 +1,8 @@
+{
+  "description": "Valid payment.confirmed with v1+v2 signature",
+  "secret": "algvw_test_secret_for_vectors_only",
+  "timestamp": 1748650000,
+  "body": "{\"id\":\"evt_test_001\",\"type\":\"payment.confirmed\",\"created\":1748650000,\"api_version\":\"2024-01-01\",\"data\":{\"tenant_label\":\"test-tenant\",\"resource_id\":\"pay_abc123\",\"chain\":\"base\",\"asset\":{\"id\":\"usdc\",\"label\":\"USDC\",\"decimals\":6},\"amount_microunits\":1000000,\"amount_pretty\":\"1.00 USDC\",\"tx_id\":\"0xdeadbeef\",\"payer_address\":\"0xabc\",\"payment_link_token\":\"tok_test\",\"payment_link_label\":\"Test Payment\"}}",
+  "signature_header": "t=1748650000,v1=39e2061acaba2aa68a705cd0a70e4f6222ce095951941eb16158fe6fa0d64af8,v2=f7d5c0d587a1fa2e17e5ce4e54e9e3236bbee0891f39dc4778cf5fdba53f69870fd4e363c375528434a061120b939bd3",
+  "expected": "ok"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Body is not valid JSON \u2192 INVALID_PAYLOAD",
+  "secret": "algvw_test_secret_for_vectors_only",
+  "timestamp": 1748650000,
+  "body": "not-json-at-all",
+  "signature_header": "t=1748650000,v1=959160e4b7aa531c192b2d9d2ca44593d27c3d8a60a1011c04942a9f70f6e143,v2=5ebfba083e42ada55aec267487dce6146562992a1864eff5e24d5b10a8cff7c2a966d4c7277b40dc177a7554f82f5e75",
+  "expected": "error",
+  "error_code": "INVALID_PAYLOAD"
+}

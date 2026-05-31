@@ -1,0 +1,9 @@
+{
+  "description": "Header does not match t=\u2026,v1=\u2026 format \u2192 MALFORMED_SIGNATURE",
+  "secret": "algvw_test_secret_for_vectors_only",
+  "timestamp": 1748650000,
+  "body": "{\"id\":\"evt_test_001\",\"type\":\"payment.confirmed\",\"created\":1748650000,\"api_version\":\"2024-01-01\",\"data\":{\"tenant_label\":\"test-tenant\",\"resource_id\":\"pay_abc123\",\"chain\":\"base\",\"asset\":{\"id\":\"usdc\",\"label\":\"USDC\",\"decimals\":6},\"amount_microunits\":1000000,\"amount_pretty\":\"1.00 USDC\",\"tx_id\":\"0xdeadbeef\",\"payer_address\":\"0xabc\",\"payment_link_token\":\"tok_test\",\"payment_link_label\":\"Test Payment\"}}",
+  "signature_header": "v1=abc123",
+  "expected": "error",
+  "error_code": "MALFORMED_SIGNATURE"
+}

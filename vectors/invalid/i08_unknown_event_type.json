@@ -1,0 +1,9 @@
+{
+  "description": "Event type not in known set \u2192 UNKNOWN_EVENT_TYPE",
+  "secret": "algvw_test_secret_for_vectors_only",
+  "timestamp": 1748650000,
+  "body": "{\"id\":\"evt_unk_001\",\"type\":\"refund.issued\",\"created\":1748650000,\"api_version\":\"2024-01-01\",\"data\":{}}",
+  "signature_header": "t=1748650000,v1=73362a3f8d797f143906c884521a963c48c3c72cb9ef84099901b08a2e2f3006,v2=476ebdadb6110b2bade81704cfc1550efc9d7d8b83fdcedf4eb16fdcfa6a3950f8ecee7d69d692ffd3ee146424b843ad",
+  "expected": "error",
+  "error_code": "UNKNOWN_EVENT_TYPE"
+}

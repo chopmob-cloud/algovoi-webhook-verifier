@@ -1,0 +1,46 @@
+{
+  "name": "@algovoi/webhook-verifier",
+  "version": "0.1.0",
+  "description": "Cryptographic verifier for AlgoVoi webhook signatures (v1 HMAC-SHA256 + v2 HKDF-SHA256/HMAC-SHA384)",
+  "license": "Apache-2.0",
+  "author": "AlgoVoi <dev@algovoi.co.uk>",
+  "homepage": "https://docs.algovoi.co.uk/webhook-verifier",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chopmob-cloud/algovoi-webhook-verifier"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "webhook",
+    "hmac",
+    "signature",
+    "verification",
+    "algovoi"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}

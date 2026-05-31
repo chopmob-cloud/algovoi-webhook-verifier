@@ -1,0 +1,8 @@
+{
+  "description": "Valid payment.confirmed with minimal data object",
+  "secret": "algvw_test_secret_for_vectors_only",
+  "timestamp": 1748650000,
+  "body": "{\"id\":\"evt_min_001\",\"type\":\"payment.confirmed\",\"created\":1748650000,\"api_version\":\"2024-01-01\",\"data\":{}}",
+  "signature_header": "t=1748650000,v1=02f2fa0c3ccf2791062bf14b34e8d15d4b321cf2c643886207b7271fd556253f,v2=7c06c1f73c62f82a8bf039d02e9fd0c127b0f345daeb581ada2a2c076c26497fc2440fad84f1312de696628b3ad0d5e2",
+  "expected": "ok"
+}
